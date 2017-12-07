@@ -1,1 +1,2 @@
-# photos.ankuragrawal.xyz
+# Photography
+This is my photography website made in jekyll and rails

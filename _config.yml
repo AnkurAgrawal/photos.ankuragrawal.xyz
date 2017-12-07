@@ -1,0 +1,26 @@
+# Base configs
+baseurl: ""
+image_fulls_loc: "/images/fulls"
+image_thumbs_loc: "/images/thumbs"
+cdn_path_hd: http://res.cloudinary.com/ankuragrawal/image/upload/f_auto,q_auto,w_auto/photos/
+cdn_path_thumbnail: 'https://res.cloudinary.com/ankuragrawal/image/upload/t_media_lib_thumb/f_auto,q_auto,w_auto,c_scale/photos/'
+
+google_analytics: "UA-102358856-3"
+
+image_meta:
+  copyright: © Ankur Agrawal
+
+# UI configs
+title: "Colorful Mind"
+subtitle: "See the world through my eyes!"
+author: "Ankur Agrawal"
+bio: "I am a Wildcard, who explores the colorful nature to inspire for interactive interfaces."
+publicise: ""
+web_design: ""
+social_urls:
+  facebook: "https://www.facebook.com/imankuragrawal"
+  twitter: "https://www.twitter.com/iamankuragrawal"
+  instagram: "https://www.instagram.com/iamankuragrawal"
+  dribbble: "https://dribbble.com/iamankuragrawal"
+  linkedin: "https://in.linkedin.com/in/iamankuragrawal"
+  github: "https://www.github.com/iamankuragrawal"

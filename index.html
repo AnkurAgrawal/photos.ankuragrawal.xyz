@@ -1,0 +1,133 @@
+---
+layout: default
+images:
+ - route-1-drive-california/1.jpg
+ - route-1-drive-california/2.jpg
+ - route-1-drive-california/3.jpg
+ - route-1-drive-california/4.jpg
+ - route-1-drive-california/5.jpg
+ - route-1-drive-california/6.jpg
+ - route-1-drive-california/7.jpg
+ - route-1-drive-california/8.jpg
+ - route-1-drive-california/9.jpg
+ - route-1-drive-california/10.jpg
+ - route-1-drive-california/11.jpg
+ - route-1-drive-california/12.jpg
+ - route-1-drive-california/13.jpg
+ - route-1-drive-california/14.jpg
+ - route-1-drive-california/15.jpg
+ - route-1-drive-california/16.jpg
+ - route-1-drive-california/17.jpg
+ - route-1-drive-california/18.jpg
+ - route-1-drive-california/19.jpg
+ - route-1-drive-california/20.jpg
+ - route-1-drive-california/21.jpg
+ - route-1-drive-california/22.jpg
+ - route-1-drive-california/23.jpg
+ - route-1-drive-california/24.jpg
+ - route-1-drive-california/25.jpg
+ - route-1-drive-california/26.jpg
+ - route-1-drive-california/27.jpg
+ - route-1-drive-california/28.jpg
+ - napa-valley/1.jpg
+ - napa-valley/2.jpg
+ - napa-valley/3.jpg
+ - napa-valley/4.jpg
+ - napa-valley/6.jpg
+ - napa-valley/7.jpg
+ - napa-valley/8.jpg
+ - napa-valley/9.jpg
+ - cooking/1.jpg
+ - cooking/2.jpg
+ - cooking/3.jpg
+ - cooking/4.jpg
+ - cooking/6.jpg
+ - cooking/7.jpg
+ - cooking/8.jpg
+ - cooking/9.jpg
+---
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="index.html"><strong>Colorful Mind</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#footer" class="icon fa-info-circle">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+      {% for image in page.images %}
+        <article class="thumb">
+          <a href="{{ site.cdn_path_hd }}{{ image }}" class="image" data-caption="{{ site.image_meta.copyright }}">
+            <img class="cld-responsive" data-src="{{ site.cdn_path_hd }}{{ image }}" alt="" data-name="{{ image }}"/>
+          </a>
+        </article>
+      {% endfor %}
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="panel">
+        <div class="inner split">
+            <div>
+                <section>
+                    <h2>Hello World, my name is Ankur</h2>
+                    <p>{{ site.bio }}</p>
+                    <p>{{ site.publicise }}</p>
+                </section>
+                <section>
+                    <h2>Follow me on ...</h2>
+                    <ul class="icons">
+                        <li><a href="{{ site.social_urls.facebook }}" class="icon fa-facebook"><span
+                                class="label">Facebook</span></a>
+                        </li>
+                        <li><a href="{{ site.social_urls.twitter }}" class="icon fa-twitter"><span
+                                class="label">Twitter</span></a>
+                        </li>
+                        <li><a href="{{ site.social_urls.instagram }}" class="icon fa-instagram"><span
+                                class="label">Instagram</span></a>
+                        </li>
+                        <li><a href="{{ site.social_urls.dribbble }}" class="icon fa-dribbble"><span
+                                class="label">Dribbble</span></a>
+                        </li>
+                        <li><a href="{{ site.social_urls.github }}" class="icon fa-github"><span
+                                class="label">GitHub</span></a>
+                        </li>
+                        <li><a href="{{ site.social_urls.linkedin }}" class="icon fa-linkedin"><span
+                                class="label">LinkedIn</span></a>
+                        </li>
+                    </ul>
+                </section>
+                <p class="copyright">
+                    &copy; {{ site.author }}.
+                </p>
+            </div>
+            <div>
+                <section>
+                    <h2>Get in touch</h2>
+                    <form method="post" action="https://formspree.io/me@ankuragrawal.xyz">
+                        <div class="field half first">
+                            <input type="text" name="name" id="name" placeholder="Name"/>
+                        </div>
+                        <div class="field half">
+                            <input type="text" name="email" id="email" placeholder="Email"/>
+                        </div>
+                        <div class="field">
+                            <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send" class="special"/></li>
+                            <li><input type="reset" value="Reset"/></li>
+                        </ul>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </footer>
+</div>
