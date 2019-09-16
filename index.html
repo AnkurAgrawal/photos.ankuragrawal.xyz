@@ -45,7 +45,7 @@ images:
 
     <!-- Header -->
     <header id="header">
-        <h1><a href="index.html"><strong>Colorful Mind</a></h1>
+        <h1><a href="index.html"><strong>{{ site.title }}</strong> by {{ site.author }}</a></h1>
         <nav>
             <ul>
                 <li><a href="#footer" class="icon fa-info-circle">About</a></li>
@@ -58,7 +58,7 @@ images:
       {% for image in page.images %}
         <article class="thumb">
           <a href="{{ site.cdn_path_hd }}{{ image }}" class="image" data-caption="{{ site.image_meta.copyright }}">
-            <img class="cld-responsive" data-src="{{ site.cdn_path_hd }}{{ image }}" alt="" data-name="{{ image }}"/>
+            <img class="cld-responsive" data-src="{{ site.cdn_path_thumbnail }}{{ image }}" alt="" data-name="{{ image }}"/>
           </a>
         </article>
       {% endfor %}
@@ -77,24 +77,48 @@ images:
                 <section>
                     <h2>Follow me on ...</h2>
                     <ul class="icons">
-                        <li><a href="{{ site.social_urls.facebook }}" class="icon fa-facebook"><span
-                                class="label">Facebook</span></a>
-                        </li>
-                        <li><a href="{{ site.social_urls.twitter }}" class="icon fa-twitter"><span
-                                class="label">Twitter</span></a>
-                        </li>
-                        <li><a href="{{ site.social_urls.instagram }}" class="icon fa-instagram"><span
-                                class="label">Instagram</span></a>
-                        </li>
-                        <li><a href="{{ site.social_urls.dribbble }}" class="icon fa-dribbble"><span
-                                class="label">Dribbble</span></a>
-                        </li>
-                        <li><a href="{{ site.social_urls.github }}" class="icon fa-github"><span
-                                class="label">GitHub</span></a>
-                        </li>
-                        <li><a href="{{ site.social_urls.linkedin }}" class="icon fa-linkedin"><span
-                                class="label">LinkedIn</span></a>
-                        </li>
+                        {% if site.social_urls.facebook %}
+                            <li>
+                                <a href="{{ site.social_urls.facebook }}" class="icon fa-facebook">
+                                    <span class="label">Facebook</span>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if site.social_urls.twitter %}
+                            <li>
+                                <a href="{{ site.social_urls.twitter }}" class="icon fa-twitter">
+                                    <span class="label">Twitter</span>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if site.social_urls.instagram %}
+                            <li>
+                                <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram">
+                                    <span class="label">Instagram</span>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if site.social_urls.dribbble %}
+                            <li>
+                                <a href="{{ site.social_urls.dribbble }}" class="icon fa-dribbble">
+                                    <span class="label">Dribbble</span>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if site.social_urls.github %}
+                            <li>
+                                <a href="{{ site.social_urls.github }}" class="icon fa-github">
+                                    <span class="label">GitHub</span>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if site.social_urls.linkedin %}
+                            <li>
+                                <a href="{{ site.social_urls.linkedin }}" class="icon fa-linkedin">
+                                    <span class="label">LinkedIn</span>
+                                </a>
+                            </li>
+                        {% endif %}
                     </ul>
                 </section>
                 <p class="copyright">

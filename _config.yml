@@ -2,8 +2,8 @@
 baseurl: ""
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
-cdn_path_hd: http://res.cloudinary.com/ankuragrawal/image/upload/f_auto,q_auto,w_auto/photos/
-cdn_path_thumbnail: 'https://res.cloudinary.com/ankuragrawal/image/upload/t_media_lib_thumb/f_auto,q_auto,w_auto,c_scale/photos/'
+cdn_path_hd: http://res.cloudinary.com/ankuragrawal/image/upload/photos/
+cdn_path_thumbnail: 'https://res.cloudinary.com/ankuragrawal/image/upload/f_auto,q_auto,w_auto,c_scale/photos/'
 
 google_analytics: "UA-102358856-3"
 
